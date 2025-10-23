@@ -1,0 +1,111 @@
+.contact-us {
+  padding: 124px 30px 0px;
+  background: var(--color-dark-1);
+}
+
+.contact-us__container {
+  display: flex;
+  justify-content: center;
+  margin: 34px 0px;
+  gap: 276px;
+}
+
+@media (max-width: 640px) {
+  .contact-us__container {
+    display: flex;
+    flex-direction: column;
+    margin: 34px auto;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+.contact-us h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.contact-us h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.contact-us label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-dark-4);
+}
+
+.contact-us a {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.contact-us a:hover {
+  opacity: 50%;
+}
+
+.contact-us img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;
+  margin: 46px auto 0px;
+  padding: 24px;
+  gap: 26px;
+  border-radius: 16px;
+  background: var(--color-gray-5);
+}
+
+.contact-us input {
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: none;
+}
+
+.contact-us textarea {
+  padding: 12px 16px;
+  resize: vertical;
+  border: none;
+  border-radius: 12px;
+}
+
+.contact-us button {
+  display: block;
+  padding: 15px 0px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--color-white);
+  background: var(--color-blue-1);
+  border-radius: 12px;
+  border: 1px solid var(--color-blue-1);
+  transition: all 0.6s ease;
+}
+
+.contact-us button:hover {
+  color: var(--color-dark-4);
+  border: 1px solid var(--color-dark-1);
+  background: var(--color-gray-5);
+  opacity: 1;
+}
+
+.contact-method {
+  display: flex;
+  margin-top: 8px;
+  gap: 70px;
+}
+
+.contact-method__radio {
+  display: flex;
+  gap: 10px;
+}

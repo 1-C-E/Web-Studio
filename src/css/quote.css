@@ -1,0 +1,32 @@
+.quote {
+  height: 300px;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .quote {
+    height: 450px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .quote {
+    height: 700px;
+    overflow: hidden;
+  }
+}
+
+.quote img {
+  position: fixed;
+  max-width: 1398px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  object-fit: scale-down;
+  z-index: -1;
+}

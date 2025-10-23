@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap');
 
 
 :root {
-  --color-white-1: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-dark-1: #333333;
   --color-dark-2: #1E1E1E;
   --color-dark-3: #2C2C2C;
   --color-dark-4: #000000;
-  --color-dark-5: #333333;
   --color-gray-1: #757575;
   --color-gray-2: #E7E7E7;
   --color-gray-3: #B3B3B3;
@@ -30,6 +29,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-white);
+    background: var(--color-dark-4);
 }
 
 button {
@@ -38,4 +39,14 @@ button {
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
