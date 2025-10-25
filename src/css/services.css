@@ -1,13 +1,7 @@
 .services {
-  padding: 48px 118px 35px;
+  padding: 48px 0 35px;
   background: black;
   font-family: "Inter", sans-serif;
-}
-
-@media (max-width: 764px) {
-  .services {
-    padding: 48px 30px 35px 30px;
-  }
 }
 
 .services__container {
@@ -37,14 +31,11 @@
 
 .services h3 {
   margin-top: 16px;
-  font-size: 16px;
-  font-weight: 400;
   color: var(--color-dark-2);
 }
 
 .services h4 {
   margin-top: 8px;
-  font-size: 16px;
   font-weight: 600;
   color: var(--color-dark-2);
 }
@@ -52,6 +43,5 @@
 .services p {
   margin-top: 8px;
   font-size: 14px;
-  font-weight: 400;
   color: var(--color-gray-1);
 }

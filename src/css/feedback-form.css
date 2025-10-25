@@ -13,8 +13,6 @@
 }
 
 .feedback-form label {
-  font-size: 16px;
-  font-weight: 400;
   color: var(--color-dark-2);
 }
 
@@ -45,7 +43,6 @@
 .feedback-form button {
   display: block;
   padding: 12px 0px;
-  font-size: 16px;
   font-weight: 300;
   color: var(--color-white);
   background: var(--color-dark-3);
