@@ -1,0 +1,140 @@
+.header {
+  padding: 30px 0;
+  background: var(--color-white);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.header ul {
+  display: flex;
+  margin-left: 54px;
+  gap: 40px;
+}
+
+.header li a {
+  color: var(--color-dark-1);
+}
+
+.header li:hover {
+  transform: translateY(-5px);
+  transition: all 0.4s ease;
+}
+
+.header a:active {
+  color: var(--color-dark-1);
+  font-weight: 600;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-dark-1);
+  z-index: 5;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 26px;
+  height: 20px;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  z-index: 5;
+}
+
+.burger-menu span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 50%;
+  background-color: var(--color-dark-1);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.burger-menu span:nth-child(1) {
+  transform: translateY(-8px);
+}
+
+.burger-menu span:nth-child(3) {
+  transform: translateY(8px);
+}
+
+.header.open .burger-menu span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .burger-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .burger-menu span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.order-site {
+  margin-left: auto;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: var(--color-white);
+  background: var(--color-blue-1);
+  border: 1px solid var(--color-blue-1);
+  border-radius: 12px;
+  transition: all 0.6s ease;
+}
+
+.order-site:hover {
+  color: var(--color-dark-1);
+  border: 1px solid var(--color-dark-1);
+  background: var(--color-white);
+}
+
+@media (max-width: 850px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .navbar {
+    position: absolute;
+    flex-direction: column;
+    width: 260px;
+    height: 400px;
+    left: -260px;
+    top: 0;
+    padding: 100px 30px 30px;
+    align-items: start;
+    background: var(--color-white);
+    transition: transform 0.5s;
+  }
+
+  .header ul {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  .header li a {
+    font-size: 20px;
+  }
+
+  .order-site {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .header.open .navbar {
+    transform: translateX(100%);
+  }
+}
